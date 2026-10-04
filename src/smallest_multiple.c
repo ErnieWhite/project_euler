@@ -26,7 +26,7 @@ int smalles_multiple(int n)
     return -1;
 }
 
-int main(int argc, char **argv) 
+int main(void) 
 {
     int n = 20;
     int smallest = smalles_multiple(n);
