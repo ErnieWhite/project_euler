@@ -10,7 +10,7 @@ smallest_multiple: src/smallest_multiple.c
 	$(CC) $(CFLAGS) -o bin/smallest_multiple src/smallest_multiple.c
 
 10001st_prime: src/10001st_prime.c
-	$(CC) $(CFLAGS) -o bin/10001st_prime src/10001st_prime.c
+	$(CC) $(CFLAGS) -o bin/10001st_prime src/10001st_prime.c -lm
 
 .PHONY: all clean largest_palindrome_product smallest_multiple 10001st_prime
 
