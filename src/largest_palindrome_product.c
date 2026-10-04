@@ -15,7 +15,7 @@ char * strrev(const char *str)
     // }
     size_t len = strlen(str);
 
-    char *reversed = malloc(len + 1);
+    char *reversed = malloc(len + 2);
     if (reversed == NULL)
     {
         return NULL;
@@ -34,7 +34,7 @@ char * strrev(const char *str)
 
 int main() 
 {
-    char number_str[6];
+    char number_str[7];
     char *number_rev;
     long max = 0;
     for (int i=100; i <= 999; i++)
