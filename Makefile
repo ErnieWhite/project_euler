@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-all: largest_palindrome_product smallest_multiple 10001st_prime largest_product_in_a_series special_pythagorean_triplet 
+all: largest_palindrome_product smallest_multiple 10001st_prime largest_product_in_a_series special_pythagorean_triplet summation_of_primes
 
 largest_palindrome_product: src/largest_palindrome_product.c
 	$(CC) $(CFLAGS) -o bin/largest_palindrome_product src/largest_palindrome_product.c
@@ -18,6 +18,9 @@ largest_product_in_a_series: src/largest_product_in_a_series.c
 special_pythagorean_triplet: src/special_pythagorean_triplet.c
 	$(CC) $(CFLAGS) -o bin/special_pythagorean_triplet src/special_pythagorean_triplet.c
 
+summation_of_primes: src/summation_of_primes.c
+	$(CC) $(CFLAGS) -o bin/summation_of_primes src/summation_of_primes.c
+
 .PHONY: all clean 
 
 clean:
@@ -25,4 +28,5 @@ clean:
 	rm -f bin/smallest_multiple
 	rm -f bin/10001st_prime
 	rm -f bin/largest_product_in_a_series
-	rm -f bin/special_pythagorean_triplet	
+	rm -f bin/special_pythagorean_triplet
+	rm -f bin/summation_of_primes
